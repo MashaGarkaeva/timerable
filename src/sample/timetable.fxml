@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Timetable">
+    <children>
+        <TableView fx:id="tableTimeTable" prefHeight="306.0" prefWidth="601.0" style="-fx-background-color: #ffffed;">
+            <columns>
+                <TableColumn fx:id="data_event" prefWidth="92.0" text="Номер группы" />
+                <TableColumn fx:id="event" prefWidth="95.0" text="Количество" />
+            <TableColumn prefWidth="213.0" text="Специальность" />
+            <TableColumn prefWidth="200.0" text="Отделение" />
+            </columns>
+        </TableView>
+        <Button fx:id="delete" layoutX="272.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Удалить" />
+        <Button fx:id="exit" layoutX="430.0" layoutY="361.0" mnemonicParsing="false" onAction="#showDialog" text="Выход из системы" />
+        <Button fx:id="add" layoutX="102.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Добавить" />
+        <TextField fx:id="dataWhen" layoutX="8.0" layoutY="317.0" prefHeight="25.0" prefWidth="69.0" promptText="Номер" />
+      <TextField fx:id="whereWillbe" layoutX="426.0" layoutY="317.0" prefHeight="25.0" prefWidth="170.0" promptText="Отделение" />
+      <TextField layoutX="102.0" layoutY="317.0" prefHeight="25.0" prefWidth="62.0" promptText="Кол-во" />
+      <TextField layoutX="192.0" layoutY="317.0" prefHeight="25.0" prefWidth="220.0" promptText="Специальность" />
+    </children>
+</AnchorPane>

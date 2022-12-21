@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewingForDirector">
+    <children>
+        <TableView fx:id="tableTimeTable" prefHeight="350.0" prefWidth="601.0" style="-fx-background-color: #ffffed;">
+            <columns>
+                <TableColumn fx:id="data_event" prefWidth="130.0" text="Дата" />
+                <TableColumn fx:id="event" prefWidth="273.0" text="Событие" />
+                <TableColumn fx:id="place" prefWidth="197.0" text="Место" />
+            </columns>
+        </TableView>
+        <Button fx:id="exit" layoutX="457.0" layoutY="361.0" mnemonicParsing="false" text="Выход из системы" />
+    </children>
+</AnchorPane>

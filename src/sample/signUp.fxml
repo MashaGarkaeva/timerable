@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #ffffed;" xmlns="http://javafx.com/javafx/8.0.202"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.signUpController">
+   <Label layoutX="208.0" layoutY="24.0" text="Регистрация" AnchorPane.leftAnchor="208.0"
+          AnchorPane.rightAnchor="207.0">
+      <font>
+         <Font name="Segoe Print" size="27.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="nameField" alignment="CENTER" layoutX="59.0" layoutY="96.0" prefHeight="25.0" prefWidth="185.0"
+              promptText="Имя" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;"
+              AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="345.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="surnameField" alignment="CENTER" layoutX="59.0" layoutY="150.0" prefHeight="25.0" prefWidth="185.0"
+              promptText="Фамилия"
+              style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;"
+              AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="345.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="patronymicField" alignment="CENTER" layoutX="59.0" layoutY="206.0" prefHeight="25.0"
+              prefWidth="185.0" promptText="Отчество"
+              style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;"
+              AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="345.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="login_Field" alignment="CENTER" layoutX="352.0" layoutY="96.0" prefHeight="34.0" prefWidth="185.0"
+              promptText="Логин" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;"
+              AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="63.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </TextField>
+   <PasswordField fx:id="password_Field" alignment="CENTER" layoutX="352.0" layoutY="150.0" prefHeight="34.0"
+                  prefWidth="185.0" promptText="Пароль"
+                  style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 6;"
+                  AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="63.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </PasswordField>
+   <Button fx:id="signUpButton" layoutX="204.0" layoutY="278.0" mnemonicParsing="false" onAction="#initialize"
+           prefHeight="43.0" prefWidth="192.0" text="Зарегистрироваться" AnchorPane.leftAnchor="204.0"
+           AnchorPane.rightAnchor="204.0">
+      <font>
+         <Font name="Segoe Print" size="15.0"/>
+      </font>
+   </Button>
+   <CheckBox fx:id="secretaryCheckBox" layoutX="352.0" layoutY="200.0" mnemonicParsing="false" text="Секретарь"
+             AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="120.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </CheckBox>
+   <CheckBox fx:id="directorCheckBox" layoutX="352.0" layoutY="228.0" mnemonicParsing="false" text="Руководитель"
+             AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="120.0">
+      <font>
+         <Font name="Segoe Print" size="13.0"/>
+      </font>
+   </CheckBox>
+</AnchorPane>
